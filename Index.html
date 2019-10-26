@@ -1,90 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/android-icon-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#000" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#000" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Marzhal Hackers</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Viga&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="./styles.css" rel="stylesheet" type="text/css" />
-  </head>
+<head>
 
-  <body>
-    <!-- GO UP BUTTON -->
-    <a href="#" class="float hidden" id="goUp" onclick="movePage(0)">
-      <i class="glyphicon glyphicon-chevron-up my-float"> </i>
-    </a>
-    <!-- CONTACT BUTTON -->
-    <button
-      class="button1 position1 position2 hider"
-      style="vertical-align:middle"
-      id="contact-btn"
-      onclick="movePage(5)"
-    >
-      <span>P R O B A R</span>
-    </button>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Marzhal Hackers</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="./styles1.css" rel="stylesheet" type="text/css" />
+  <link href="./styles2.css" rel="stylesheet" type="text/css" />
 
-    <button id="toggler-btn" class="navbar-toggle" onclick="toggleMenu()">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+</head>
 
-    <!--<section class="menu-mobile">
+<body>
+  <!-- GO UP BUTTON -->
+  <a href="#" class="float hidden" id="goUp" onclick="movePage(0)">
+    <i class="glyphicon glyphicon-chevron-up my-float">
+    </i>
+  </a>
+  <!-- CONTACT BUTTON -->
+  <button class="button1 position1 position2 hider" style="vertical-align:middle" id="contact-btn"
+    onclick="movePage(5)"><span>CONTACTO</span></button>
+
+  <button id="toggler-btn" class="navbar-toggle" onclick="toggleMenu()">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
+  <section class="menu-mobile">
     <img src="./marzhallogo.png" alt="">
     <ul class="menu">
       <li>
@@ -92,266 +41,216 @@
       </li>
 
       <li>
-        <span onclick="movePage(1)">BENEFICIOS</span>
+        <span onclick="movePage(1)">NOSOTROS</span>
       </li>
 
       <li>
-        <span onclick="movePage(2)">ANTIPHISHING</span>
+        <span onclick="movePage(2)">SERVICIOS</span>
       </li>
 
       <li>
-        <span onclick="movePage(3)">CONTACTO</span>
+        <span onclick="movePage(3)">PRODUCTOS</span>
       </li>
 
       <li>
-        <span onclick="movePage(4)">WEB APP</span>
+        <span onclick="movePage(4)">CLIENTES</span>
+      </li>
+
+      <li>
+        <span onclick="movePage(5)">CONTACTO</span>
       </li>
     </ul>
-  </section>-->
-    <header class="site-header">
-      <nav>
-        <div class="brand">
-          <a href=""><img src="comonente_1.png" alt="marzhal"/></a>
-        </div>
-        <ul>
-          <li>
-            <span onclick="movePage(0)">INICIO</span>
-          </li>
+  </section>
 
-          <li>
-            <span onclick="movePage(1)">BENEFICIOS</span>
-          </li>
 
-          <li>
-            <span onclick="movePage(2)">ANTIPHISHING</span>
-          </li>
+  <header class="site-header">
 
-          <li>
-            <span onclick="movePage(3)">CONTACTO</span>
-          </li>
+    <nav>
+      <div class="brand">
+        <a href=""><img src="./marzhallogo.png" alt="marzhal" /></a>
+      </div>
+      <ul>
+        <li>
+          <span onclick="movePage(0)">INICIO</span>
+        </li>
 
-          <li>
-            <span onclick="movePage(4)">WEB APP</span>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- etiqueta para INICIO
+        <li>
+          <span onclick="movePage(1)">NOSOTROS</span>
+        </li>
+
+        <li>
+          <span onclick="movePage(2)">SERVICIOS</span>
+        </li>
+
+        <li>
+          <span onclick="movePage(3)">PRODUCTOS</span>
+        </li>
+
+        <li>
+          <span onclick="movePage(4)">CLIENTES</span>
+        </li>
+
+        <li>
+          <span onclick="movePage(5)">CONTACTO</span>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- etiqueta para INICIO
     <div class="col-lg-12">
       <h2>INICIO</h2>
     </div>-->
 
-    <section class="parallaxes">
-      <!-- etiqueta para INICIO -->
-      <div class="background container-fluid" id="inicio">
-        <video id="video-desktop" autoplay="true" muted="muted">
-          <source src="/animacion-desktop.mp4" type="video/mp4" />
-        </video>
-        <video id="video-mobile" autoplay="true" muted="muted">
-          <source src="/animacion-mobile.mp4" type="video/mp4" />
-        </video>
-      </div>
+  <section class="parallaxes">
 
-      <!-- etiqueta para NOSOTROS -->
-      <div class="background nosotros container-fluid" id="nosotros">
-        <div class="row">
-          <div class=" col-sm-7 content">
-            <h2 class="somos">
-              MARZHAL <span>ANTI</span
-              ><span class="black_letter">PHISHING</span>
-            </h2>
-            <div class="somos_text">
-              Lorem ipaum dolor sit amet, <br />
-              consectetuer adipiscing elit, sed <br />
-              diam nonummy nibh euismod <br />tincidunt ut laoreet dolore magna
-              <br />
-              aliquam eat
-            </div>
-          </div>
-          <div class=" col-sm-5 ">
-            <img src="./Grupo 7.png" alt="" class="img_zorro" />
+    <!-- etiqueta para animación -->
+    <div class="background container-fluid" id="inicio">
+      <video id="video-desktop" autoplay="true" muted="muted">
+        <!-- <source src="/animacion-desktop.mp4" type="video/mp4"> -->
+      </video>
+      <video id="video-mobile" autoplay="true" muted="muted">
+        <!-- <source src="/animacion-mobile.mp4" type="video/mp4"> -->
+      </video>
+    </div>
+
+    <!-- etiqueta para NOSOTROS -->
+    <div class="background nosotros container-fluid" id="nosotros">
+      <div class="row">
+        <div class=" col-sm-7 content">
+          <h2 class="somos">
+            MARZHAL <span>ANTI</span
+            ><span class="black_letter">PHISHING</span>
+          </h2>
+          <div class="somos_text">
+            Lorem ipaum dolor sit amet, <br />
+            consectetuer adipiscing elit, sed <br />
+            diam nonummy nibh euismod <br />tincidunt ut laoreet dolore magna
+            <br />
+            aliquam eat
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- etiqueta para SERVICIOS -->
-      <div class="background container-fluid" id="servicios">
-        <div class="row">
-          <div class="row content-wrapper servicios">
-            <h2>BENEFICIOS</h2>
-            <div class="servicios-flex">
-              <div class="row ">
-                <div class="col-sm-4 servicio servicio_component flex-container">
-                  <div>
-                    <img src="./Grupo 43.png" alt="" />
-                  </div>
-                  <div>
-                    <h2>Seguridad</h2>
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer</p>
-                  </div>
+    <!-- etiqueta para SERVICIOS -->
+    <div class="background container-fluid" id="servicios">
+      <div class="">
+        <div class="row content-wrapper servicios">
+          <h2 class="black_letter">BENEFICIOS</h2>
+          <div class="servicios-flex">
+            <div class="row ">
+              <div class="col-sm-4 servicio servicio_component flex-container">
+                <div>
+                  <img src="./Grupo 43.png" alt="" />
                 </div>
-                <div class="col-sm-4 servicio servicio_component flex-container" >
-                  <div>
-                    <img src="./Grupo 24.png" alt="" />
-                  </div>
-                  <div>
-                    <h2>Seguridad</h2>
+                <div>
+                  <h2>Seguridad</h2>
 
-                    <p>Lorem ipsum dolor sit amet, consectetuer</p>
-                    div>
-                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetuer</p>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-sm-4 col-sm-offset-4 servicio servicio_component flex-container">
-                  <div>
-                    <img src="./Grupo 43.png" alt="" />
-                  </div>
-
-                  <div>
-                    <h2>Seguridad</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer</p>
-                  </div>
+              <div class="col-sm-4 servicio servicio_component flex-container" >
+                <div>
+                  <img src="./Grupo 24.png" alt="" />
                 </div>
-                <div class="col-sm-4 servicio servicio_component flex-container">
-                  <div>
-                    <img src="./Grupo 24.png" alt="" />
-                  </div>
+                <div>
+                  <h2>Seguridad</h2>
 
-                  <div>
-                    <h2>Seguridad</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                  div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-4 servicio servicio_component flex-container">
+                <div>
+                  <img src="./Grupo 43.png" alt="" />
+                </div>
 
-                    <p>Lorem ipsum dolor sit amet, consectetuer</p>
-                  </div>
+                <div>
+                  <h2>Seguridad</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                </div>
+              </div>
+              <div class="col-sm-4 servicio servicio_component flex-container">
+                <div>
+                  <img src="./Grupo 24.png" alt="" />
+                </div>
+
+                <div>
+                  <h2>Seguridad</h2>
+
+                  <p>Lorem ipsum dolor sit amet, consectetuer</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- etiqueta para PRODUCTOS -->
-      <div class="background container-fluid" id="productos">
-        <div class="row">
-          <div class="productos content-wrapper">
-            <h2>PRODUCTOS</h2>
-            <div class="prods-flex">
-              <div class="col-sm-4  producto_component">
-                <div class="p_container_productos">
-                  <img src="./ANTIPHISHING_Mesa de trabajo 1.png" alt="" />
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-4  producto_component">
-                <div class="p_container_productos">
-                  <img src="./ANTIPHISHING_Mesa de trabajo 1.png" alt="" />
-                  <p>
-                    Lorem ipsum doler sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-4  producto_component">
-                <div class="p_container_productos">
-                  <img src="./ANTIPHISHING_Mesa de trabajo 1.png" alt="" />
-                  <p>
-                    Lorem ipsum drlor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    </div>
+    <!-- etiqueta para PRODUCTOS -->
+    <div class="background container-fluid" id="productos">
+      <div class="">
+        <div class="row content-wrapper">
+          <h2>CLIENTES</h2>
         </div>
       </div>
-      <!-- etiqueta para CLIENTES -->
-      <div class="background clientes container-fluid" id="clientes">
-        <div class="row">
-          <div class="row content-wrapper">
-            <h2>CLIENTES</h2>
+    </div>
+    <!-- etiqueta para CONTACTO -->
+    <div class="background contacto container-fluid" id="contacto">
+      <div class="row">
+        <div class="col-xs-12 content-wrapper">
+          <div class="col-sm-6 contacto_container map-side">
+            <div id="map"></div>
           </div>
-        </div>
-      </div>
-      <!-- etiqueta para CONTACTO -->
-      <div class="background contacto container-fluid" id="contacto">
-        <div class="row">
-          <div class="col-xs-12 content-wrapper">
-            <div class="col-sm-6 contacto_container map-side">
-              <div id="map"></div>
-            </div>
-            <div class="col-sm-6 contacto_container">
-              <h2>Contacto</h2>
-              <div class="contacto_container">
-                <input
-                  class="input_nombre"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="NOMBRE"
-                />
-                <input
-                  class="input_email"
-                  type="email"
-                  name=""
-                  id=""
-                  placeholder="EMAIL"
-                />
-                <textarea
-                  clas="textarea_mensaje"
-                  name=""
-                  id=""
-                  placeholder="MENSAJE"
-                ></textarea>
-                <button class="enviar_button">ENVIAR</button>
-              </div>
+          <div class="col-sm-6 contacto_container">
+            <h2 class="black_letter">Contacto</h2>
+            <div class="contacto_container">
+              <input class="input_nombre" type="text" name="" id="" placeholder="NOMBRE">
+              <input class="input_email" type="email" name="" id="" placeholder="EMAIL">
+              <textarea clas="textarea_mensaje" name="" id="" placeholder="MENSAJE"></textarea>
+              <button class="enviar_button">ENVIAR</button>
             </div>
           </div>
-        </div>
-        <div class="white">
-          <div class=" footer_1">
-            <img src="./marzhallogo.png" alt="" />
-            <div>
-              <h2 class="uppercase">MARZHAL CORP</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                inventore porro amet neque, autem alias accusantium
-              </p>
-            </div>
-          </div>
-          <div class="footer_2">
-            <a href="" class="uppercase">AVISO DE PRIVACIDAD</a>
-            <a href="" class="uppercase">TERMINOS Y CONDICIONES</a>
-          </div>
-          <div class="footer_3">
-            <div class="social-buttons">
-              <a href="#" class="social">
-                <img src="./logotwitter.png" alt="" />
-              </a>
-              <a href="#" class="social">
-                <img src="./logofacebook.png" alt="" />
-              </a>
-              <a href="#" class="social">
-                <img src="./logolinkedin.png" alt="" />
-              </a>
-            </div>
-            <h4 class="uppercase">COPYRIGHT <span>MARZHAL HACKERS</span></h4>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"
-    ></script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWZnt6u8QnkKOxcUs3UQdkvhycohMaQ4w&callback=initMap"
-    ></script>
-    <script src="./main.js"></script>
-  </body>
+        </div>
+
+      </div>
+      <div class="white">
+        <div class=" footer_1">
+          <img src="./marzhallogo.png" alt="">
+          <div>
+            <h2 class="uppercase">MARZHAL CORP</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore porro amet neque, autem alias
+              accusantium</p>
+          </div>
+        </div>
+        <div class="footer_2">
+          <a href="" class="uppercase">AVISO DE PRIVACIDAD</a>
+          <a href="" class="uppercase">TERMINOS Y CONDICIONES</a>
+
+        </div>
+        <div class="footer_3">
+          <div class="social-buttons">
+            <a href="#" class="social"> <img src="./logotwitter.png" alt=""> </a>
+            <a href="#" class="social"> <img src="./logofacebook.png" alt=""> </a>
+            <a href="#" class="social"> <img src="./logolinkedin.png" alt=""> </a>
+          </div>
+          <h4 class="uppercase">
+            COPYRIGHT <span>MARZHAL HACKERS</span>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWZnt6u8QnkKOxcUs3UQdkvhycohMaQ4w&callback=initMap">
+    </script>
+  <script src="./main.js"></script>
+</body>
+
 </html>

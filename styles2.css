@@ -1,0 +1,75 @@
+.background {
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.somos_text {
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  margin-top: 20vh;
+  font-size: 1.5vw;
+  font-weight: 600 !important;
+  line-height: 149%;
+  letter-spacing: 1px;
+}
+
+nav ul li span:hover {
+  color: #60c3d3;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.black_letter {
+  color: black !important;
+}
+.nosotros {
+  background-image: url(Grupo42.png);
+  background-size: 115% !important;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+div.row.servicios {
+  padding: 0 10vw;
+}
+.servicio_component {
+  margin-top: 2vh;
+  align-items: center;
+}
+.servicio_component img {
+  width: 6vw;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .servicio_component img {
+    max-width: 20vw;
+    max-height: 20vw;
+    width: auto;
+  }
+}
+.servicio_component h2 {
+  font-family: "Viga", sans-serif;
+  color: #60c3d3;
+  margin: 0;
+  font-size: 27px;
+  float: left;
+  width: 100%;
+  align-self: flex-start;
+  padding-left: 2vw;
+  margin-bottom: 1vh;
+  margin-top: 3vh;
+}
+.servicio_component p {
+  color: black;
+  letter-spacing: 1.5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2vw;
+  line-height: 1.4vw;
+  padding-left: 2vw;
+  padding-right: 4vw;
+  width: min-content;
+  text-align: left;
+}

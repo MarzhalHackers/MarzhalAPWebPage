@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Viga&display=swap");
 html,
 body {
-  background: #000 !important;
   height: 100%;
 }
 
@@ -18,32 +17,33 @@ video {
   max-height: 100%;
 }
 header {
-  background-color: black !important ;
+
   height: 300px !important;
   width: 100% !important;
   position: absolute;
   top: 0;
   z-index: 1000;
 }
+
 body {
   width: 100%;
   height: 100%;
   margin: 0 !important;
-  background: red;
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
 }
+
 /*navigation variables*/
 
 .site-header {
   width: 100% !important;
   height: 90px !important;
-  background: black !important;
+  background: #000 !important;
 }
 .navigation {
   height: 70px;
-  background: black;
+  background: #fff;
 }
 
 .brand img {
@@ -100,7 +100,7 @@ nav ul li span {
   cursor: pointer;
 }
 nav ul li span:hover {
-  color: #60c3d3;
+  color: #d67329;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -108,15 +108,16 @@ nav ul li span:hover {
 
 .h2 {
   color: white;
-  background: black;
+  background: #fff;
   height: 80px;
   width: 100%;
 }
 
 .nosotros {
-  position: fixed;
+  background: #fff;
   color: white;
   height: 100vh;
+  padding-top: 50px;
 }
 .nosotros .row {
   width: 100%;
@@ -128,18 +129,15 @@ nav ul li span:hover {
   width: 100%;
   font-size: 5vw;
 }
-.black_letter {
-  color: black;
-}
 .somos_text {
   text-align: right;
   font-family: "Roboto", sans-serif;
-  color: black;
-  margin-top: 20vh;
-  font-size: 1.5vw;
-  font-weight: 600 !important;
+  color: #d67329;
+  margin-top: 30px;
+  font-size: 1.2vw;
+  font-weight: 100;
   line-height: 149%;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 .img_zorro {
@@ -200,7 +198,7 @@ nav ul li span:hover {
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #5ec1d0;
+  background-color: #d67329;
   color: #fff;
   border-radius: 50px;
   text-align: center;
@@ -229,19 +227,9 @@ section {
   -webkit-transform: translateY(30vh);
   transform: translateY(30vh);
   transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
-  background-color: #fff;
+  background: #fff;
 }
-.background:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0);
-}
+
 .background:first-child {
   height: calc(100vh - 70px);
   -webkit-transform: translateY(70px) !important;
@@ -278,13 +266,14 @@ section {
 }
 
 .content-wrapper {
-  height: 120vh;
+  height: 100vh;
   margin-top: 0 !important;
-  display: flex;
-  justify-content:initial;
+  /*display: flex;*/
+  justify-content: center;
   text-align: center;
   flex-flow: column nowrap;
   color: #fff;
+  font-family: Montserrat;
   text-transform: uppercase;
   -webkit-transform: translateY(40vh);
   transform: translateY(40vh);
@@ -321,8 +310,8 @@ section {
 }
 
 .background.down-scroll {
-  -webkit-transform: translate3d(0, -150vh, 0);
-  transform: translate3d(0, -150vh, 0);
+  -webkit-transform: translate3d(0, -145vh, 0);
+  transform: translate3d(0, -145vh, 0);
 }
 .background.down-scroll .content-wrapper {
   -webkit-transform: translateY(40vh);
@@ -338,11 +327,7 @@ section {
 }
 
 .nosotros {
-  background-image: url(Grupo42.png);
-  position: relative;
-  background-size: 115% !important;
-
-  width: 100%;
+  background: #fff;
 }
 
 .productos {
@@ -380,59 +365,30 @@ section {
   margin: 5vh 3vw;
 }
 
-.servicios {
-  background: white !important;
-}
 .servicios h2 {
   font-family: "Viga", sans-serif !important;
   font-size: 5vw;
-  color: #000;
-  text-align: start !important;
-  margin-left: 2vw;
-}
-.flex-container {
-  display: flex;
-  flex-direction: row;
 }
 .servicio_component {
   margin-top: 2vh;
-  align-items: center;
 }
 .servicio_component img {
-  width: 6vw;
-
-  margin: 0;
-}
-@media only screen and (max-width: 768px) {
-  .servicio_component img {
-    max-width: 20vw;
-    max-height: 20vw;
-    width: auto;
-  }
+  width: 12vw;
 }
 .servicio_component h2 {
+  margin-top: 1vh;
   font-family: "Viga", sans-serif;
-  color: #60c3d3;
-  margin: 0;
-  font-size: 27px;
-  float: left;
-  width: 100%;
-  align-self: flex-start;
-  padding-left: 2vw;
-  margin-bottom: 1vh;
-  margin-top: 3vh;
+  color: white;
+  font-size: 38px;
 }
 .servicio_component p {
   color: black;
   letter-spacing: 1.5px;
   font-family: "Roboto", sans-serif;
   font-size: 1.2vw;
-  line-height: 1.4vw;
-  padding-left: 2vw;
+  line-height: 1.9vw;
+  padding-left: 4vw;
   padding-right: 4vw;
-  /* padding: 0; */
-  width: min-content;
-  text-align: left;
 }
 .servicio {
   height: 90vh;
@@ -449,7 +405,7 @@ section {
   font-size: 5vw;
 }
 .contacto {
-  background: black;
+  background: #fff;
 }
 .contacto h2 {
   margin-top: 90px;
@@ -604,15 +560,10 @@ textarea {
 }
 
 #contact-btn.position1 {
-  width: 130px;
-  height: 40px;
   position: absolute;
-  bottom: 49vh;
-  left: 49.5vw;
+  bottom: 13vh;
+  left: 37vw;
   z-index: 1000;
-  background-color: #000;
-  color: #5ec1d0;
-  font-family: "Roboto" !important;
 }
 #contact-btn.position2 {
   position: fixed;
@@ -622,11 +573,10 @@ textarea {
   padding: 5px 0;
   background: #000;
   color: #fff;
-  font-family: "Roboto" !important;
 }
 #contact-btn.contrast {
   background: #000;
-  color: white;
+  color: #d67329;
 }
 #contact-btn.position3 {
   opacity: 0;
@@ -653,7 +603,9 @@ textarea {
     bottom: 40px;
     left: 15px;
   }
-  
+  .somos_text {
+    font-size: 4vw;
+  }
   .img_zorro {
     height: 30vh;
     margin: 5vh 0;
@@ -662,17 +614,15 @@ textarea {
 
   .servicios {
     display: flex;
-    padding-left:10vw;
-
-    /* padding-bottom: 10vh;*/
-    justify-content: flex-start !important;
+    justify-content: space-evenly;
+    padding-bottom: 10vh;
   }
   .servicio {
     height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
-    /*align-items: center;*/
+    align-items: center;
     justify-content: space-evenly;
   }
   .servicio:nth-child(2) {
@@ -873,8 +823,7 @@ textarea {
   /* CORRECT DISPLAY OF SERVICIOS */
   div.row.servicios {
     display: flex !important;
-    padding: 0 10vw;
-   
+    padding: 90px 0;
   }
   div.servicios-flex div.servicio_component {
     height: auto;
@@ -916,7 +865,7 @@ textarea {
   border: 1px solid #fff !important;
   width: 100% !important;
   height: 1vw !important;
-  background: #fff !important;
+  background: #fff;
 }
 
 .icon-bar:nth-child(2) {

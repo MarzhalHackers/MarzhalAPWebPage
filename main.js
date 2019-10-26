@@ -61,6 +61,7 @@ function playVideo(){
 
 // ------------- PARALLAXES STUFF ------------- //
 function parallaxesStuff(){
+  console.log(currentSlideNumber);
   if(currentSlideNumber == 0){
     $('#contact-btn').addClass("hider");
     playVideo();
