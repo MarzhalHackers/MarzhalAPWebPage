@@ -3,6 +3,10 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+.background:nth-child(4),
+.background:nth-child(5) {
+  background: #000;
+}
 .somos_text {
   text-align: right;
   font-family: "Roboto", sans-serif;
@@ -23,6 +27,9 @@ nav ul li span:hover {
 
 .black_letter {
   color: black !important;
+}
+.white_letter {
+  color: #fff !important;
 }
 .nosotros {
   background-image: url(Grupo42.png);
@@ -72,4 +79,38 @@ div.row.servicios {
   padding-right: 4vw;
   width: min-content;
   text-align: left;
+}
+
+.scroll-lines {
+  height: 45vh;
+  position: absolute;
+  top: 27.5vh;
+  left: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+  transition: 0.3s;
+}
+
+.scroll-lines.sl-hider {
+  opacity: 0;
+}
+
+.scroll-line {
+  width: 0.5vw;
+  height: 20%;
+  background: #000;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.scroll-line.contrast {
+  background: #fff;
+}
+.scroll-line.active {
+  background: #fff;
+}
+.scroll-line.blue-line.active {
+  background: #60c3d3 !important;
 }

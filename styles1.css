@@ -100,7 +100,7 @@ nav ul li span {
   cursor: pointer;
 }
 nav ul li span:hover {
-  color: #d67329;
+  color: #60d3d3;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -132,7 +132,7 @@ nav ul li span:hover {
 .somos_text {
   text-align: right;
   font-family: "Roboto", sans-serif;
-  color: #d67329;
+  color: #60d3d3;
   margin-top: 30px;
   font-size: 1.2vw;
   font-weight: 100;
@@ -150,7 +150,7 @@ nav ul li span:hover {
   width: 200px;
   margin-left: -30px !important;
   height: 30px;
-  background-color: #d67329;
+  background-color: #60d3d3;
   border-bottom-right-radius: 20px;
   border-radius: 20px;
   border: none;
@@ -198,7 +198,7 @@ nav ul li span:hover {
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #d67329;
+  background-color: #60d3d3;
   color: #fff;
   border-radius: 50px;
   text-align: center;
@@ -461,7 +461,7 @@ textarea {
   border-radius: 3vh !important;
   align-self: flex-end;
   margin-top: 2vh;
-  background: #d67329;
+  background: #60d3d3;
   border: none;
   font-family: "Roboto", sans-serif;
   color: black;
@@ -556,7 +556,7 @@ textarea {
   margin-top: 2vh;
 }
 .footer_3 h4 span {
-  color: #d67329;
+  color: #60d3d3;
 }
 
 #contact-btn.position1 {
@@ -576,7 +576,7 @@ textarea {
 }
 #contact-btn.contrast {
   background: #000;
-  color: #d67329;
+  color: #60d3d3;
 }
 #contact-btn.position3 {
   opacity: 0;
@@ -904,6 +904,6 @@ ul.menu li {
 }
 
 ul.menu span {
-  color: #d67329;
+  color: #60d3d3;
   font-weight: bold;
 }

@@ -33,6 +33,13 @@
     <span class="icon-bar"></span>
   </button>
 
+  <div class="scroll-lines sl-hider">
+    <span onclick="movePage(1)" class="scroll-line" id="sl-1"></span>
+    <span onclick="movePage(2)" class="scroll-line blue-line" id="sl-2"></span>
+    <span onclick="movePage(3)" class="scroll-line blue-line" id="sl-3"></span>
+    <span onclick="movePage(4)" class="scroll-line blue-line" id="sl-4"></span>
+  </div>
+
   <section class="menu-mobile">
     <img src="./marzhallogo.png" alt="">
     <ul class="menu">
@@ -41,23 +48,19 @@
       </li>
 
       <li>
-        <span onclick="movePage(1)">NOSOTROS</span>
+        <span onclick="movePage(1)">BENEFICIOS</span>
       </li>
 
       <li>
-        <span onclick="movePage(2)">SERVICIOS</span>
+        <span onclick="movePage(2)">ANTIPHISHING</span>
       </li>
 
       <li>
-        <span onclick="movePage(3)">PRODUCTOS</span>
+        <span onclick="movePage(3)">CONTACTO</span>
       </li>
 
       <li>
-        <span onclick="movePage(4)">CLIENTES</span>
-      </li>
-
-      <li>
-        <span onclick="movePage(5)">CONTACTO</span>
+        <span onclick="movePage(4)">WEB APP</span>
       </li>
     </ul>
   </section>
@@ -75,23 +78,19 @@
         </li>
 
         <li>
-          <span onclick="movePage(1)">NOSOTROS</span>
+          <span onclick="movePage(1)">BENEFICIOS</span>
         </li>
 
         <li>
-          <span onclick="movePage(2)">SERVICIOS</span>
+          <span onclick="movePage(2)">ANTIPHISHING</span>
         </li>
-
+        
         <li>
-          <span onclick="movePage(3)">PRODUCTOS</span>
+          <span onclick="movePage(3)">WEB APP</span>
         </li>
-
+        
         <li>
-          <span onclick="movePage(4)">CLIENTES</span>
-        </li>
-
-        <li>
-          <span onclick="movePage(5)">CONTACTO</span>
+          <span onclick="movePage(4)">CONTACTO</span>
         </li>
       </ul>
     </nav>
@@ -120,8 +119,7 @@
       <div class="row">
         <div class=" col-sm-7 content">
           <h2 class="somos">
-            MARZHAL <span>ANTI</span
-            ><span class="black_letter">PHISHING</span>
+            MARZHAL <span>ANTI</span><span class="black_letter">PHISHING</span>
           </h2>
           <div class="somos_text">
             Lorem ipaum dolor sit amet, <br />
@@ -151,7 +149,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetuer</p>
                 </div>
               </div>
-              <div class="col-sm-4 servicio servicio_component flex-container" >
+              <div class="col-sm-4 servicio servicio_component flex-container">
                 <div>
                   <img src="./Grupo 24.png" alt="" />
                 </div>
@@ -194,19 +192,19 @@
     <div class="background container-fluid" id="productos">
       <div class="">
         <div class="row content-wrapper">
-          <h2>CLIENTES</h2>
+          <h2 class="white-letter">CLIENTES</h2>
         </div>
       </div>
     </div>
     <!-- etiqueta para CONTACTO -->
     <div class="background contacto container-fluid" id="contacto">
       <div class="row">
-        <div class="col-xs-12 content-wrapper">
+        <div class="container content-wrapper">
           <div class="col-sm-6 contacto_container map-side">
             <div id="map"></div>
           </div>
           <div class="col-sm-6 contacto_container">
-            <h2 class="black_letter">Contacto</h2>
+            <h2 class="white_letter">Contacto</h2>
             <div class="contacto_container">
               <input class="input_nombre" type="text" name="" id="" placeholder="NOMBRE">
               <input class="input_email" type="email" name="" id="" placeholder="EMAIL">
