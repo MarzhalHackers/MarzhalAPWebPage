@@ -61,11 +61,20 @@ function playVideo(){
 
 // ------------- PARALLAXES STUFF ------------- //
 function parallaxesStuff(){
+  console.log(currentSlideNumber);
+  $(".scroll-line").removeClass("active");
+  if(currentSlideNumber == 3 || currentSlideNumber == 4){
+    $(".scroll-line").addClass("contrast");
+  } else  $(".scroll-line").removeClass("contrast");
+  
   if(currentSlideNumber == 0){
     $('#contact-btn').addClass("hider");
+    $(".scroll-lines").addClass("sl-hider");
     playVideo();
   } else {
     $('#contact-btn').removeClass("hider");
+    $(".scroll-lines").removeClass("sl-hider");
+    $('#sl-'+currentSlideNumber.toString()).addClass("active");
   }
   if(currentSlideNumber == 2){
     $('#contact-btn').addClass("contrast");
@@ -79,7 +88,7 @@ function parallaxesStuff(){
     $('#contact-btn').removeClass("position2");
     $('#goUp').addClass("hidden");
   }
-  if(currentSlideNumber == 5){
+  if(currentSlideNumber == 4){
     $('#contact-btn').addClass("position3");
   } else {
     $('#contact-btn').removeClass("position3");
@@ -259,12 +268,14 @@ $(document).ready(function(){
 
   var _originalSize = $(window).width() + $(window).height()
   $(window).resize(function(){
-    if($(window).width() + $(window).height() != _originalSize){
+    if(window.innerWidth > 768) return;
+    
+    if($(window).height() < _originalSize){
       console.log("keyboard show up");
-      $(".white").toggle();
+      $(".white").hide();
     }else{
       console.log("keyboard closed");
-      $(".white").toggle();
+      $(".white").show();
     }
   });
 
