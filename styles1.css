@@ -6,18 +6,10 @@ body {
   height: 100%;
 }
 
-.background:first-child,
-.background:nth-child(2) {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
 video {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
 }
 header {
-
   height: 300px !important;
   width: 100% !important;
   position: absolute;
@@ -632,12 +624,6 @@ textarea {
     width: 60%;
   }
 
-  .servicio div {
-    width: 40%;
-  }
-  .servicio div h2 {
-    font-size: 7vw !important;
-  }
   .productos {
     height: 100vh;
     margin-top: 0 !important;
@@ -677,10 +663,6 @@ textarea {
     width: 60%;
   }
 
-  .servicio_component p {
-    font-size: 3vw;
-    line-height: 4vw;
-  }
   h2 {
     font-size: 10vw !important;
   }
@@ -874,22 +856,18 @@ textarea {
 
 section.menu-mobile {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
+  width: 50vw;
+  height: 40vh;
+  background: rgba(0, 0, 0, 1);
   left: -120vw;
   top: -120vh;
   /* top: 0; */
   transition: ease-in 0.5s;
   z-index: 1500;
-  border-radius: 100%;
   display: flex !important;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-}
-section.menu-mobile img {
-  width: 40%;
 }
 section.menu-mobile.show {
   left: 0 !important;
@@ -897,13 +875,18 @@ section.menu-mobile.show {
   border-radius: 0;
 }
 
+ul.menu{
+  padding: 5vh 0 0 20px ;
+}
+
 ul.menu li {
   list-style: none;
   padding: 1vh 0;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 ul.menu span {
   color: #60d3d3;
-  font-weight: bold;
+  font-weight: 400;
+  letter-spacing: 3px;
 }

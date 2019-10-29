@@ -88,7 +88,7 @@ function parallaxesStuff(){
     $('#contact-btn').removeClass("position2");
     $('#goUp').addClass("hidden");
   }
-  if(currentSlideNumber == 5){
+  if(currentSlideNumber == 4){
     $('#contact-btn').addClass("position3");
   } else {
     $('#contact-btn').removeClass("position3");
